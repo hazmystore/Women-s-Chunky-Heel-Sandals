@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Chunky Heel Sandals - FashionStore.id</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #e83e8c;
+            --secondary: #6c757d;
+            --dark: #343a40;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --info: #17a2b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .store-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdf2f6 0%, #ffffff 100%);
+            padding: 50px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            animation: fadeInLeft 1s ease;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            animation: fadeInRight 1s ease;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .hero-image img:hover {
+            transform: scale(1.03);
+        }
+        
+        .tagline {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--dark);
+            line-height: 1.2;
+        }
+        
+        .tagline span {
+            color: var(--primary);
+        }
+        
+        .subtagline {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 30px;
+        }
+        
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .badge {
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        
+        .badge i {
+            margin-right: 5px;
+        }
+        
+        .badge-primary {
+            background-color: rgba(232, 62, 140, 0.1);
+            color: var(--primary);
+        }
+        
+        .badge-success {
+            background-color: rgba(40, 167, 69, 0.1);
+            color: var(--success);
+        }
+        
+        .badge-warning {
+            background-color: rgba(255, 193, 7, 0.1);
+            color: var(--warning);
+        }
+        
+        /* Product Gallery */
+        .product-gallery {
+            padding: 50px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: auto;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 5%;
+            animation: zoomIn 0.3s ease;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .close:hover {
+            color: var(--primary);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .feature-desc {
+            color: var(--secondary);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 50px 0;
+        }
+        
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .testimonial-item::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(232, 62, 140, 0.1);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            margin-bottom: 20px;
+            font-style: italic;
+            color: var(--secondary);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .author-info h4 {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Color Options */
+        .color-options {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .colors-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .color-item {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .color-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        
+        .color-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .color-name {
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        /* CTA Banner */
+        .cta-banner {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin: 50px 0;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            z-index: 0;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .price-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .current-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .original-price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+        
+        .discount-badge {
+            background-color: var(--warning);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .countdown-item {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 15px;
+            border-radius: 5px;
+            min-width: 70px;
+        }
+        
+        .countdown-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .countdown-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        .stock-counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .stock-bar {
+            height: 10px;
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .stock-progress {
+            height: 100%;
+            width: 80%;
+            background-color: var(--warning);
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--warning);
+            color: var(--dark);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background-color: #ffd351;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-block {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #495057;
+            color: white;
+        }
+        
+        /* Order Form */
+        .order-form {
+            padding: 50px 0;
+        }
+        
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .form-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .form-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Fake Popup */
+        .fake-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            overflow: hidden;
+            z-index: 1000;
+            transform: translateY(120%);
+            animation: slideInUp 0.5s ease 3s forwards;
+            display: none;
+        }
+        
+        .popup-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .popup-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .popup-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        .popup-body {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .popup-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--info);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+        
+        .popup-content {
+            flex: 1;
+        }
+        
+        .popup-text {
+            font-size: 0.9rem;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .popup-location {
+            font-size: 0.7rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .popup-location i {
+            margin-right: 5px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links li {
+            margin: 0 15px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInLeft {
+            from { 
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from { 
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes zoomIn {
+            from { 
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to { 
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes slideInUp {
+            from { 
+                transform: translateY(120%);
+            }
+            to { 
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .nav-links {
+                margin-top: 15px;
+            }
+            
+            .nav-links li {
+                margin: 0 10px;
+            }
+            
+            .hero-container {
+                flex-direction: column;
+            }
+            
+            .hero-content, .hero-image {
+                text-align: center;
+            }
+            
+            .tagline {
+                font-size: 2rem;
+            }
+            
+            .badges {
+                justify-content: center;
+            }
+            
+            .countdown-container {
+                flex-wrap: wrap;
+            }
+            
+            .fake-popup {
+                width: calc(100% - 40px);
+                right: 20px;
+                left: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tagline {
+                font-size: 1.8rem;
+            }
+            
+            .current-price {
+                font-size: 2rem;
+            }
+            
+            .original-price {
+                font-size: 1.2rem;
+            }
+            
+            .discount-badge {
+                font-size: 0.8rem;
+            }
+            
+            .countdown-item {
+                min-width: 50px;
+                padding: 5px 10px;
+            }
+            
+            .countdown-value {
+                font-size: 1.2rem;
+            }
+            
+            .countdown-label {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t39.30808-6/340280384_202238192515306_1857026655624969742_n.jpg?stp=dst-jpg_tt6&cstp=mx626x626&ctp=s626x626&_nc_cat=101&cb=99be929b-878c9f95&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KVO9AscMyKwQ7kNvwH-gE2_&_nc_oc=Adke--60wZCeYatcST3RMce1sO_oLoNSJ8n5MUOXoi3zFCpxEyz0ZiIHYM9UC9kMROM&_nc_zt=23&_nc_ht=scontent.fsub8-2.fna&_nc_gid=xzRzkIn6jYIVfErSVItKYg&oh=00_AfTnpnqW7oKWwp3dE-hU4M8sUfyjHjCOzq8ZjsYI-OVHSg&oe=6873FA9E" alt="FashionStore.id" class="logo">
+                <span class="store-name">FashionStore.id</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#order">Pesan Sekarang</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <img src="https://cdn.orderonline.id/uploads/images_8376431752040468825.gif" alt="Women's Chunky Heel Sandals" style="max-width: 100%; margin-bottom: 20px;">
+                <h1 class="tagline">Tampil Elegan & Nyaman dengan <span>Chunky Heel Sandals</span></h1>
+                <p class="subtagline">Solusi sempurna untuk wanita modern yang ingin tampil stylish tanpa mengorbankan kenyamanan.</p>
+                
+                <div class="badges">
+                    <span class="badge badge-primary"><i class="fas fa-check-circle"></i> Premium Quality</span>
+                    <span class="badge badge-success"><i class="fas fa-truck"></i> Gratis Ongkir Hari Ini</span>
+                    <span class="badge badge-warning"><i class="fas fa-bolt"></i> Stok Terbatas</span>
+                </div>
+                
+                <div class="view-counter" style="margin-bottom: 20px;">
+                    <p><i class="fas fa-eye"></i> <span id="view-count">1248</span> orang sedang melihat produk ini</p>
+                </div>
+                
+                <a href="#order" class="btn btn-primary">BELI SEKARANG <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="https://tempeie.com/cdn/shop/files/spp_20250421155240_722423ab45cf1c05a3901504c045198c_a1ddb07c-db07-477a-b0f1-ab2b9cb3b077.jpg?v=1745228926&width=493" alt="Women's Chunky Heel Sandals">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="product-gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri Produk</h2>
+            <div class="gallery-container">
+                <div class="gallery-item" onclick="openModal('https://tempeie.com/cdn/shop/files/spp_20250421155240_722423ab45cf1c05a3901504c045198c_a1ddb07c-db07-477a-b0f1-ab2b9cb3b077.jpg?v=1745228926&width=493')">
+                    <img src="https://tempeie.com/cdn/shop/files/spp_20250421155240_722423ab45cf1c05a3901504c045198c_a1ddb07c-db07-477a-b0f1-ab2b9cb3b077.jpg?v=1745228926&width=493" alt="Chunky Heel Sandals 1">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://tempeie.com/cdn/shop/files/spp_20250421155235_f0e20cddd5e69d87bc28e3f29e8a6546_567f9d66-131a-491b-86ce-5e7e503a9dca.jpg?v=1745228926&width=493')">
+                    <img src="https://tempeie.com/cdn/shop/files/spp_20250421155235_f0e20cddd5e69d87bc28e3f29e8a6546_567f9d66-131a-491b-86ce-5e7e503a9dca.jpg?v=1745228926&width=493" alt="Chunky Heel Sandals 2">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://tempeie.com/cdn/shop/files/spp_20250421155235_0a174a88f3d9d90b0ceccb085161f09b_71ca044a-3f86-4034-a621-de977cf44b5b.jpg?v=1745228926&width=493')">
+                    <img src="https://tempeie.com/cdn/shop/files/spp_20250421155235_0a174a88f3d9d90b0ceccb085161f09b_71ca044a-3f86-4034-a621-de977cf44b5b.jpg?v=1745228926&width=493" alt="Chunky Heel Sandals 3">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://tempeie.com/cdn/shop/files/spp_20250421155236_23168b073fec254a717b95f0426de7f5_ba88c684-734b-4a5f-91f3-aeacdb994d31.jpg?v=1745228926&width=493')">
+                    <img src="https://tempeie.com/cdn/shop/files/spp_20250421155236_23168b073fec254a717b95f0426de7f5_ba88c684-734b-4a5f-91f3-aeacdb994d31.jpg?v=1745228926&width=493" alt="Chunky Heel Sandals 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Keunggulan Produk</h2>
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature-title">Desain Trendi</h3>
+                    <p class="feature-desc">Dengan desain chunky heel yang sedang tren, sandal ini akan membuat penampilan Anda semakin stylish dan fashionable.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <h3 class="feature-title">Nyaman Dipakai</h3>
+                    <p class="feature-desc">Sol yang empuk dan desain ergonomis membuat Anda nyaman beraktivitas seharian tanpa rasa pegal.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Material Berkualitas</h3>
+                    <p class="feature-desc">Terbuat dari bahan premium yang tahan lama dan mudah dibersihkan, cocok untuk berbagai kesempatan.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="feature-title">Warna Elegan</h3>
+                    <p class="feature-desc">Tersedia dalam pilihan warna netral yang mudah dipadukan dengan berbagai outfit favorit Anda.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px; text-align: center;">
+                <img src="https://cdn.orderonline.id/uploads/images_3492821752041080219.gif" alt="Fitur Produk" style="max-width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Apa Kata Pelanggan Kami?</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        "Sandal ini sangat nyaman dipakai seharian. Heel-nya pas tidak terlalu tinggi tapi tetap membuat kaki terlihat jenjang. Bahannya juga premium banget!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">D</div>
+                        <div class="author-info">
+                            <h4>Diana - Pengusaha</h4>
+                            <p>Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        "Warnanya persis seperti di foto, kualitasnya juga oke banget. Sudah dipakai beberapa kali dan masih seperti baru. Worth it untuk harganya!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Rina - Dokter</h4>
+                            <p>Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        "Pengiriman cepat dan packingnya rapi. Sandalnya sangat nyaman, tidak licin dan ukurannya pas. Akan beli lagi warna yang lain!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Sari - Dosen</h4>
+                            <p>Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        "Desainnya sangat stylish dan bisa dipakai untuk berbagai acara. Dari jalan-jalan santai sampai acara semi formal tetap cocok. Recomended!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">L</div>
+                        <div class="author-info">
+                            <h4>Lina - Akuntan</h4>
+                            <p>Bali</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Options -->
+    <section class="color-options">
+        <div class="container">
+            <h2 class="section-title">Pilihan Warna</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: var(--secondary);">Tersedia dalam 2 pilihan warna elegan yang bisa disesuaikan dengan gaya Anda</p>
+            <div class="colors-container">
+                <div class="color-item">
+                    <div class="color-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0619/8968/3358/files/spp_20250421155227_80febc59d44623f08b35b727b1793c18.jpg?v=1745221951" alt="Black">
+                    </div>
+                    <p class="color-name">Hitam</p>
+                </div>
+                <div class="color-item">
+                    <div class="color-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0619/8968/3358/files/spp_20250421155217_6ea5ecefd6e73f87b05f773c1ed73f60.jpg?v=1745221941" alt="White">
+                    </div>
+                    <p class="color-name">Putih</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="container">
+        <div class="cta-banner">
+            <div class="cta-content">
+                <h3 class="cta-title">KHUSUS HARI INI SAJA!</h3>
+                <p class="cta-subtitle">Dapatkan Women's Chunky Heel Sandals dengan harga spesial dan GRATIS ONGKIR untuk pembayaran transfer hari ini</p>
+                
+                <div class="price-container">
+                    <span class="current-price">Rp 165.000</span>
+                    <span class="original-price">Rp 330.000</span>
+                    <span class="discount-badge">50% OFF</span>
+                </div>
+                
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="countdown-hours">08</div>
+                        <div class="countdown-label">Jam</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="countdown-minutes">45</div>
+                        <div class="countdown-label">Menit</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="countdown-seconds">30</div>
+                        <div class="countdown-label">Detik</div>
+                    </div>
+                </div>
+                
+                <div class="stock-counter">
+                    <span>Tersisa: <span id="stock-count">12</span> pasang</span>
+                    <div class="stock-bar">
+                        <div class="stock-progress"></div>
+                    </div>
+                </div>
+                
+                <a href="#order" class="btn">BELI SEKARANG JUGA <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Form -->
+    <section class="order-form" id="order">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h3 class="form-title">FORM PEMESANAN</h3>
+                    <p class="form-subtitle">Isi data diri Anda dengan benar untuk proses pemesanan</p>
+                </div>
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="elsa" data-product-slug="womens-chunky-heel-sandals" data-product-id="686d13e30b53c8161400b462" id="oo-embed-form-womens-chunky-heel-sandals-9318" data-origin="orderonline"> 
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            </style>
+                            <div aria-live="polite" role="status"><div>Loading...</div></div>
+                        </div> 
+                    </form> 
+                </div> 
+                <script> 
+                    if (typeof xLogError != 'function') { 
+                        var xLogError = function (error) { 
+                            var req = new XMLHttpRequest(); 
+                            var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); 
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; 
+                            req.open('POST', 'https://api.orderonline.id/log', true); 
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+                            req.send(params); 
+                        }; 
+                    } 
+                    try { 
+                        if (typeof xEmbedScript != 'function') { 
+                            var xEmbedScript = function () { 
+                                !function(w, d, e, v, id, t, s) { 
+                                    if (d.getElementById(id)) return; 
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id; 
+                                    s = d.getElementsByTagName(e)[0]; 
+                                    s.parentNode.insertBefore(t, s); 
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js'); 
+                            }; 
+                        } 
+                        if (typeof xEmbedInit != 'function') { 
+                            var xEmbedInit = function (w, n) { 
+                                if (w.ooe) return; 
+                                n = w.ooe = function() { 
+                                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) 
+                                }; 
+                                if (!w._ooe) w._ooe = n; 
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = []; 
+                            }; 
+                        } 
+                        xEmbedInit(window); 
+                        ooe('setup', 'redirect', 'https://elsa.orderonline.id'); 
+                        ooe('init', '5f1a584d68e4c05c6f66c677', '686d13e30b53c8161400b462', '686d13e30b53c8161400b463', 'oo-embed-form-womens-chunky-heel-sandals-9318', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); 
+                        if (!window.jQuery) { 
+                            !function(w, d, e, v, id, t, s) { 
+                                if (d.getElementById(id)) return; 
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id; 
+                                t.addEventListener('load', xEmbedScript); 
+                                s = d.getElementsByTagName(e)[0]; 
+                                s.parentNode.insertBefore(t, s); 
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); 
+                        } else { 
+                            xEmbedScript(); 
+                        } 
+                    } catch (e) { 
+                        xLogError(e); 
+                        throw e; 
+                    } 
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fake Popup -->
+    <div class="fake-popup" id="fakePopup">
+        <div class="popup-header">
+            <span class="popup-title">Pembelian Terbaru</span>
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+        </div>
+        <div class="popup-body">
+            <div class="popup-avatar" id="popupAvatar">A</div>
+            <div class="popup-content">
+                <p class="popup-text"><span id="popupName">Amanda</span> baru saja memesan <strong>Chunky Heel Sandals</strong></p>
+                <p class="popup-location"><i class="fas fa-map-marker-alt"></i> <span id="popupLocation">Jakarta</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t39.30808-6/340280384_202238192515306_1857026655624969742_n.jpg?stp=dst-jpg_tt6&cstp=mx626x626&ctp=s626x626&_nc_cat=101&cb=99be929b-878c9f95&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KVO9AscMyKwQ7kNvwH-gE2_&_nc_oc=Adke--60wZCeYatcST3RMce1sO_oLoNSJ8n5MUOXoi3zFCpxEyz0ZiIHYM9UC9kMROM&_nc_zt=23&_nc_ht=scontent.fsub8-2.fna&_nc_gid=xzRzkIn6jYIVfErSVItKYg&oh=00_AfTnpnqW7oKWwp3dE-hU4M8sUfyjHjCOzq8ZjsYI-OVHSg&oe=6873FA9E" alt="FashionStore.id" class="footer-logo">
+            
+            <ul class="footer-links">
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Hubungi Kami</a></li>
+            </ul>
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <p class="copyright">© 2024 FashionStore.id. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic Counters
+        function updateCounters() {
+            // View counter - random increment
+            const viewCount = document.getElementById('view-count');
+            let views = parseInt(viewCount.textContent);
+            views += Math.floor(Math.random() * 5) + 1;
+            viewCount.textContent = views;
+            
+            // Stock counter - random decrement
+            const stockCount = document.getElementById('stock-count');
+            let stock = parseInt(stockCount.textContent);
+            if (stock > 0 && Math.random() > 0.7) {
+                stock -= 1;
+                stockCount.textContent = stock;
+                
+                // Update progress bar
+                const progress = (stock / 12) * 100;
+                document.querySelector('.stock-progress').style.width = `${progress}%`;
+                
+                // Change color when stock is low
+                if (stock <= 3) {
+                    document.querySelector('.stock-progress').style.backgroundColor = '#dc3545';
+                }
+            }
+        }
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-hours').textContent = String(Math.floor(hours)).padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        
+        // Image Modal
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+        
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+        
+        // Fake Popup
+        function showPopup() {
+            const popup = document.getElementById('fakePopup');
+            const names = ['Amanda', 'Bella', 'Citra', 'Dewi', 'Eka', 'Fitri', 'Gita', 'Hana', 'Indah', 'Julia'];
+            const cities = ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Makassar', 'Semarang', 'Yogyakarta', 'Bali', 'Palembang', 'Batam'];
+            
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomCity = cities[Math.floor(Math.random() * cities.length)];
+            
+            document.getElementById('popupName').textContent = randomName;
+            document.getElementById('popupLocation').textContent = randomCity;
+            document.getElementById('popupAvatar').textContent = randomName.charAt(0);
+            
+            popup.style.display = 'block';
+            
+            // Auto close after 10 seconds
+            setTimeout(() => {
+                popup.style.transform = 'translateY(120%)';
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                    // Show again after random time (30-90 seconds)
+                    setTimeout(showPopup, Math.floor(Math.random() * 60000) + 30000);
+                }, 500);
+            }, 10000);
+        }
+        
+        function closePopup() {
+            const popup = document.getElementById('fakePopup');
+            popup.style.transform = 'translateY(120%)';
+            setTimeout(() => {
+                popup.style.display = 'none';
+                // Show again after random time (30-90 seconds)
+                setTimeout(showPopup, Math.floor(Math.random() * 60000) + 30000);
+            }, 500);
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update counters every 5 seconds
+            setInterval(updateCounters, 5000);
+            
+            // Update countdown every second
+            setInterval(updateCountdown, 1000);
+            updateCountdown(); // Initial call
+            
+            // Show first popup after 3 seconds
+            setTimeout(showPopup, 3000);
+            
+            // Close modal when clicking outside
+            window.onclick = function(event) {
+                const modal = document.getElementById('imageModal');
+                if (event.target == modal) {
+                    closeModal();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
